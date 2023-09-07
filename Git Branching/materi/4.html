@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Merge</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="merge">Merge</h1>
+<hr>
+<h2 id="merge-1">Merge</h2>
+<ul>
+<li>Merge adalah proses dimana kita melakukan penggabungan dua buah branch</li>
+<li>Merge biasanya dilakukan setelah kita selesai membuat kode program di sebuah branch, dan ingin menggabungkan fitur tersebut ke branch lain, misal ke branch utama</li>
+<li>Saat kita melakukan merge, branch tidak akan dihapus, artinya kita masih tetap bisa melakukan commit di branch yang ada</li>
+<li>Jika kita ingin menghapus branch yang sudah di merge, kita perlu lakukan secara manual</li>
+</ul>
+<hr>
+<h2 id="melakukan-merge">Melakukan Merge</h2>
+<ul>
+<li>Untuk melakukan merge, pertama kita perlu pindah ke branch dimana kita lokasi merge akan dilakukan</li>
+<li>Selanjutnya gunakan perintah :</li>
+</ul>
+<pre><code>git merge namabranch
+</code></pre>
+<ul>
+<li>Artinya branch dari namabranch akan di merge ke dalam branch saat ini kita berada</li>
+</ul>
+<hr>
+<h2 id="diagram-merge">Diagram Merge</h2>
+<p><img src="..\assets\img\4\1.PNG" alt="1"></p>
+<hr>
+<h2 id="tugas">Tugas</h2>
+<ul>
+<li>Merge branch feature/1, feature/2, feature/3 dan feature/4 ke branch master</li>
+</ul>
+<p><img src="..\assets\img\4\2.PNG" alt="2"></p>
+<p><img src="..\assets\img\4\3.PNG" alt="3"></p>
+<hr>
+<h2 id="diagram-merge-1">Diagram Merge</h2>
+<p><img src="..\assets\img\4\4.PNG" alt="4"></p>
+<hr>
+<h2 id="graph-log">Graph Log</h2>
+<ul>
+<li>Lihat log git dalam bentuk graph menggunakan perintah :</li>
+</ul>
+<pre><code>git log --oneline --graph
+</code></pre>
+
+        
+        
+    </body>
+    </html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Submodule</title>
+        <style>
+            /* From extension vscode.github */
+            /*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+            .vscode-dark img[src$=\#gh-light-mode-only],
+            .vscode-light img[src$=\#gh-dark-mode-only] {
+                display: none;
+            }
+        </style>
+
+        <link rel="stylesheet" href="../../assets/css/markdown.min.css">
+        <link rel="stylesheet" href="../../assets/css/highlight.min.css">
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+            .task-list-item {
+                list-style-type: none;
+            }
+
+            .task-list-item-checkbox {
+                margin-left: -20px;
+                vertical-align: middle;
+                pointer-events: none;
+            }
+        </style>
+
+    </head>
+
+    <body class="vscode-body vscode-dark">
+        <h1 id="submodule">Submodule</h1>
+        <hr>
+        <h2 id="submodule-1">Submodule</h2>
+        <ul>
+            <li>Saat kita membuat project aplikasi, kadang kita ingin membuat library yang berisi kode program yang
+                ingin digunakan di beberapa aplikasi</li>
+            <li>Pada kasus seperti ini, fitur Git Submodule sangat bermanfaat</li>
+            <li>Git Submodule memungkinkan kita menambahkan git repository ke git repository yang lain, atau dinamakan
+                submodule</li>
+            <li>Dengan menggunakan submodule, kita bisa melakukan management git repository terpisah, namun kita bisa
+                mengakses git repository lain</li>
+        </ul>
+        <hr>
+        <h2 id="diagram-submodule">Diagram Submodule</h2>
+        <p><img src="..\assets\img\14\1.PNG" alt="1"></p>
+        <hr>
+        <h2 id="menambah-submodule">Menambah Submodule</h2>
+        <ul>
+            <li>Untuk menambah submodule ke dalam git repository, kita bisa gunakan perintah :</li>
+        </ul>
+        <pre><code>git submodule add urlgitrepo namafolder
+</code></pre>
+        <ul>
+            <li>Saat kita menambah submodule, secara otomatis semua git repository submodule tersebut akan di clone ke
+                dalam folder yang kita tentukan</li>
+            <li>Bagaimana git mendeteksi bahwa folder itu adalah submodule?</li>
+            <li>Git akan mendeteksinya dari file .gitmodules</li>
+        </ul>
+        <hr>
+        <h2 id="submodule-repository">Submodule Repository</h2>
+        <ul>
+            <li>Saat kita masuk ke folder submodule, sebenarnya akan seperti berada di project git repository submodule
+                tersebut</li>
+            <li>Kita bisa melakukan management git repository di submodule tersebut, seperti melakukan commit, mengelola
+                branch, dan lain-lain</li>
+            <li>Namun tidak disarankan untuk melakukan perubahan di submodule, lakukanlah perubahan langsung di git
+                repository nya, anggap submodule hanya digunakan untuk menduplikasi perubahan yang terjadi di git
+                repository sumber asli nya</li>
+        </ul>
+        <hr>
+        <h2 id="update-submodule">Update Submodule</h2>
+        <ul>
+            <li>Jika terjadi perubahan di repository submodule, kita bisa mendapat update perubahannya dengan
+                menggunakan perintah :</li>
+        </ul>
+        <pre><code>git submodule update --remote namafolder
+</code></pre>
+        <ul>
+            <li>Atau jika ingin semua submodule di update, kita bisa gunakan perintah :</li>
+        </ul>
+        <pre><code>git submodule update --remote
+</code></pre>
+        <ul>
+            <li>Atau jika ingin melakukan update manual, kita bisa masuk ke dalam folder submodule, lalu melakukan pull
+                ke git remote submodule tersebut</li>
+        </ul>
+        <hr>
+        <h2 id="clone-submodule">Clone Submodule</h2>
+        <ul>
+            <li>Saat kita melakukan clone sebuah git repository yang terdapat submodule nya, tidak secara default
+                repository submodule akan di clone juga</li>
+            <li>Setelah kita melakukan clone, kita perlu melakukan perintah init untuk mengaktifkan module nya dengan
+                perintah :</li>
+        </ul>
+        <pre><code>git submodule init
+</code></pre>
+        <ul>
+            <li>Perintah ini akan membaca dari file .gitmodule lalu membuat submodule sesuai dengan file tersebut</li>
+            <li>Selanjutnya untuk download submodule git repository nya, kita bisa gunakan perintah submodule update
+            </li>
+        </ul>
+        <hr>
+        <h2 id="mengubah-branch-submodule">Mengubah Branch Submodule</h2>
+        <ul>
+            <li>Untuk mengubah branch di submodule, sebenarnya kita bisa lakukan secara manual menggunakan perintah git
+                branch</li>
+            <li>Namun hal ini tidak akan membuat konsisten, karena bisa jadi tiap orang bisa berbeda-beda branch
+                submodule nya</li>
+            <li>Agar sama, kita bisa gunakan perintah submodule set-branch untuk mengubah branch submodule, sehingga
+                secara otomatis semua git repo akan menggunakan branch yang sudah ditentukan</li>
+            <li>Caranya kita bisa gunakan perintah :</li>
+        </ul>
+        <pre><code>git submodule set-branch --branch namabranch namafolder
+</code></pre>
+        <hr>
+        <h2 id="menghapus-submodule">Menghapus Submodule</h2>
+        <ul>
+            <li>Untuk menghapus submodule, kita bisa hapus folder submodule nya, lalu ubah file .gitmodules nya</li>
+        </ul>
+
+
+
+    </body>
+
+</html>

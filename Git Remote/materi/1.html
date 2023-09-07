@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Pengenalan Git Remote</title>
+        <style>
+            /* From extension vscode.github */
+            /*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+            .vscode-dark img[src$=\#gh-light-mode-only],
+            .vscode-light img[src$=\#gh-dark-mode-only] {
+                display: none;
+            }
+        </style>
+
+        <link rel="stylesheet" href="../../assets/css/markdown.min.css">
+        <link rel="stylesheet" href="../../assets/css/highlight.min.css">
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+            .task-list-item {
+                list-style-type: none;
+            }
+
+            .task-list-item-checkbox {
+                margin-left: -20px;
+                vertical-align: middle;
+                pointer-events: none;
+            }
+        </style>
+
+    </head>
+
+    <body class="vscode-body vscode-dark">
+        <h1 id="pengenalan-git-remote">Pengenalan Git Remote</h1>
+        <hr>
+        <h2 id="git-remote">Git Remote</h2>
+        <ul>
+            <li>Sebelumnya kita sudah belajar semua fitur yang terdapat di Git</li>
+            <li>Namun semua fitur yang kita bahas, masih kita lakukan di local komputer kita masing-masing</li>
+            <li>Saat nanti bekerja dengan tim, atau berkolaborasi, kita tidak hanya akan menyimpan git repository pada
+                satu komputer saja</li>
+            <li>Tiap anggota tim, kemungkinan akan meng-copy git repository yang kita buat, dan juga melakukan
+                kontribusi ke git repository nya</li>
+            <li>Git mendukung centralized server, dimana kita bisa menyimpan perubahan git repository di komputer ke Git
+                server</li>
+            <li>Karena Git merupakan distributed version control, walaupun kita gunakan Git Server, tapi kita tidak
+                wajib terkoneksi ketika ingin mengelola git repository</li>
+            <li>Hanya ketika kita ingin mengirim perubahan atau mengambil perubahan, baru kita butuh terkoneksi ke Git
+                Server</li>
+        </ul>
+        <hr>
+        <h2 id="diagram-git-remote">Diagram Git Remote</h2>
+        <p><img src="..\assets\img\1\1.PNG" alt="1"></p>
+        <hr>
+        <h2 id="multiple-git-server">Multiple Git Server</h2>
+        <ul>
+            <li>Karena Git merupakan distributed system, jadi kita tidak hanya bisa menggunakan satu Git Server</li>
+            <li>Jika kita mau, kita juga bisa menggunakan beberapa Git Server sekaligus ketika membuat git repository
+            </li>
+            <li>Nanti kita bisa memilih, mau mengirim perubahan atau mengambil perubahan ke Git Server yang mana</li>
+        </ul>
+        <hr>
+        <h2 id="diagram-multiple-git-server">Diagram Multiple Git Server</h2>
+        <p><img src="..\assets\img\1\2.PNG" alt="2"></p>
+
+
+
+    </body>
+
+</html>

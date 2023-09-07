@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cherry Pick</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="cherry-pick">Cherry Pick</h1>
+<hr>
+<h2 id="cherry-pick-1">Cherry Pick</h2>
+<ul>
+<li>Kadang ada kasus, ketika kita membuat kode program di sebuah branch kita ingin melakukan merge, namun tidak ingin melakukan merge semua branch nya, mungkin hanya sebagian commit saja</li>
+<li>Cherry Pick merupakan fitur yang digunakan untuk mengambil commit dari branch manapun dan kita merge ke dalam branch saat ini</li>
+</ul>
+<hr>
+<h2 id="tugas">Tugas</h2>
+<ul>
+<li>Buat branch feature/c</li>
+<li>Edit file1.txt lalu commit</li>
+<li>Edit file2.txt lalu commit</li>
+<li>Edit file3.txt lalu commit</li>
+<li>Edit file4.txt lalu commit</li>
+</ul>
+<hr>
+<h2 id="diagram-branch">Diagram Branch</h2>
+<p><img src="..\assets\img\6\1.PNG" alt="1"></p>
+<hr>
+<h2 id="melakukan-cherry-pick">Melakukan Cherry Pick</h2>
+<ul>
+<li>Misal sekarang kita ingin melakukan merge branch feature/c, namun kita tidak ingin merge semua perubahan</li>
+<li>Misal saja kita hanya ingin melakukan merge perubahan di file1.txt dan file3.txt</li>
+<li>Maka kita bisa melakukan cherry pick untuk commit perubahan tersebut, caranya gunakan perintah :</li>
+</ul>
+<pre><code>git cherry-pick commitId
+</code></pre>
+<hr>
+<h2 id="diagram-hasil-cherry-pick">Diagram Hasil Cherry Pick</h2>
+<p><img src="..\assets\img\6\2.PNG" alt="2"></p>
+
+        
+        
+    </body>
+    </html>

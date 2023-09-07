@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Membatalkan Perubahan</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+<link rel="stylesheet" href="../../assets/css/markdown.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="membatalkan-perubahan">Membatalkan Perubahan</h1>
+<hr>
+<h2 id="membatalkan-penambahan-file">Membatalkan Penambahan File</h2>
+<ul>
+<li>Jika kita menambah file di Working Directory, lalu misal kita ingin membatalkan perubahannya</li>
+<li>Caranya cukup sederhana, kita hanya perlu menghapus file tersebut, atau bisa menggunakan perintah :</li>
+</ul>
+<pre><code>git clean -f
+</code></pre>
+<p><img src="..\assets\img\10\1.PNG" alt="1"></p>
+<hr>
+<h2 id="membatalkan-perubahan-file">Membatalkan Perubahan File</h2>
+<p>● Jika kita ingin membatalkan perubahan file yang telah kita lakukan, kita bisa menggunakan perintah :</p>
+<pre><code>git restore namafile
+</code></pre>
+<hr>
+<h2 id="kode--git-restore">Kode : Git Restore</h2>
+<p><img src="..\assets\img\10\2.PNG" alt="2"></p>
+<hr>
+<h2 id="membatalkan-penghapusan-file">Membatalkan Penghapusan File</h2>
+<p>● Penghapusan file sebenarnya sama dengan perubahan file, jadi jika kita ingin membatalkan penghapusan file, kita bisa gunakan perintah yang sama dengan membatalkan perubahan file :</p>
+<pre><code>git restore namafile
+</code></pre>
+<hr>
+<h2 id="kode--git-restore-1">Kode : Git Restore</h2>
+<p><img src="..\assets\img\10\3.PNG" alt="3"></p>
+<hr>
+<h2 id="membatalkan-dari-staging-index">Membatalkan dari Staging Index</h2>
+<p>● Perintah git restore hanya bisa dilakukan untuk membatalkan perubahan yang terjadi di Working Directory<br>
+● Artinya jika perubahan terlanjur kita masukkan ke Staging Index, maka untuk membatalkannya tidak bisa kita lakukan secara langsung dari Staging Index<br>
+● Kita perlu mengembalikan posisi dari Staging Index ke Working Directory terlebih dahulu, caranya kita bisa gunakan perintah :</p>
+<pre><code>git restore --staged namafile
+</code></pre>
+<hr>
+<h2 id="kode--git-restore-di-staging-index">Kode : Git Restore di Staging Index</h2>
+<p><img src="..\assets\img\10\4.PNG" alt="4"></p>
+<hr>
+<h2 id="kode--git-restore-ke-working-directory">Kode : Git Restore ke Working Directory</h2>
+<p><img src="..\assets\img\10\5.PNG" alt="5"></p>
+<hr>
+<h2 id="membatalkan-yang-sudah-di-commit">Membatalkan Yang Sudah di Commit</h2>
+<ul>
+<li>Bagaimana jika perubahan yang kita lakukan terlanjur di commit?</li>
+<li>Tidak ada cara yang bisa kita lakukan jika perubahan sudah terlanjur di commit</li>
+<li>Yang bisa kita lakukan adalah dengan dua cara, Rollback Commit atau Revert Commit</li>
+<li>Kedua cara tersebut akan kita bahas di materi sendiri-sendiri</li>
+</ul>
+
+        
+        
+    </body>
+    </html>

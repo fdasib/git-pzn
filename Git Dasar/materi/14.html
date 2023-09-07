@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reset Commit</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+<link rel="stylesheet" href="../../assets/css/markdown.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="reset-commit">Reset Commit</h1>
+<hr>
+<h2 id="reset-commit-1">Reset Commit</h2>
+<ul>
+<li>Sebelumnya kita sudah tahu membatalkan perubahan, namun bagaimana jika ternyata perubahan sudah terlanjur kita commit ke Repository?</li>
+<li>Untuk hal seperti itu, kita bisa melakukan reset commit</li>
+<li>Reset commit merupakan mekanisme dimana kita menggeser HEAD pointer ke posisi commit yang kita mau, artinya commit selanjutnya akan dilakukan pada posisi HEAD baru</li>
+<li>Untuk melakukan reset commit, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git reset &lt;mode&gt; hash
+</code></pre>
+<ul>
+<li>Ada beberapa mode pengaturan melakukan reset commit</li>
+</ul>
+<hr>
+<h2 id="diagram-git-reset">Diagram Git Reset</h2>
+<p><img src="..\assets\img\14\1.PNG" alt="1"></p>
+<hr>
+<h2 id="mode-git-reset">Mode Git Reset</h2>
+<ul>
+<li>--soft, memindahkan HEAD pointer, namun tidak melakukan perubahan apapun di Staging Index dan Working Directory</li>
+<li>--mixed (default), memindahkan HEAD pointer, mengubah Staging Index menjadi sama seperti dengan Repository, namun tidak mengubah apapun di Working Directory</li>
+<li>--hard, memindahkan HEAD pointer, dan mengubah Staging Index dan Working Directory sehingga sama dengan Repository</li>
+</ul>
+<hr>
+<h2 id="kode--git-log">Kode : Git Log</h2>
+<p><img src="..\assets\img\14\2.PNG" alt="2"></p>
+<hr>
+<h2 id="kode--git-reset-soft">Kode : Git Reset Soft</h2>
+<p><img src="..\assets\img\14\3.PNG" alt="3"></p>
+<hr>
+<h2 id="rewrite-riwayat-commit">Rewrite Riwayat Commit</h2>
+<ul>
+<li>Jika kita melakukan reset, namun kita belum membuat commit baru</li>
+<li>Kita masih bisa kembali maju lagi ke commit yang paling baru</li>
+<li>Namun jika kita membuat commit baru, secara otomatis commit lama akan ditimpa oleh commit baru</li>
+</ul>
+<hr>
+<h2 id="kode--git-reset-mixed">Kode : Git Reset Mixed</h2>
+<p><img src="..\assets\img\14\4.PNG" alt="4"></p>
+<hr>
+<h2 id="kode--git-reset-hard">Kode : Git Reset Hard</h2>
+<p><img src="..\assets\img\14\5.PNG" alt="5"></p>
+
+        
+        
+    </body>
+    </html>

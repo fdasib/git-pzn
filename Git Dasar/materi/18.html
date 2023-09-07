@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Revert Commit</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+<link rel="stylesheet" href="../../assets/css/markdown.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="revert-commit">Revert Commit</h1>
+<hr>
+<h2 id="revert-commit-1">Revert Commit</h2>
+<ul>
+<li>Git memiliki fitur revert commit, yaitu fitur untuk membatalkan commit yang sudah kita lakukan dengan cara membuat commit baru yang membatalkan commit sebelumnya</li>
+<li>Misal kita sudah melakukan commit data perubahan dari text Eko menjadi Eka, jika kita revert, secara otomatis akan membuat commit baru dengan melakukan perubahan dari Eka ke Eko</li>
+<li>Untuk melakukan revert commit, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git revert hash
+</code></pre>
+<hr>
+<h2 id="kode--git-status">Kode : Git Status</h2>
+<ul>
+<li>Misal kita akan revert commit melakukan rename dari file2.txt menjadi file_2.txt</li>
+</ul>
+<hr>
+<h2 id="kode--git-revert">Kode : Git Revert</h2>
+<p><img src="..\assets\img\18\1.PNG" alt="1"></p>
+<hr>
+<h2 id="kode--git-log-setelah-revert">Kode : Git Log Setelah Revert</h2>
+<p><img src="..\assets\img\18\2.PNG" alt="2"></p>
+
+        
+        
+    </body>
+    </html>

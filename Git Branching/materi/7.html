@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tag</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="tag">Tag</h1>
+<hr>
+<h2 id="tag-1">Tag</h2>
+<ul>
+<li>Tag merupakan fitur, dimana kita bisa menandai sebuah commit id</li>
+<li>Sebelumnya kita sudah tahu dengan HEAD, yaitu reference ke commit terakhir di branch kita saat ini</li>
+<li>Jika kita ingin membuat sebuah reference ke sebuah commit, kita bisa menggunakan Tag</li>
+<li>Dalam pengembangan perangkat lunak, biasanya Tag digunakan sebagai penanda versi rilis dari aplikasi, misal Tag 1.0.0, Tag 1.0.2, dan lain-lain</li>
+<li>Karena Tag merupakan reference ke commit, jadi Tag bisa dilakukan di branch manapun</li>
+</ul>
+<hr>
+<h2 id="membuat-tag">Membuat Tag</h2>
+<ul>
+<li>Tag adalah sesuatu yang unik, artinya jika kita sudah membuat tag dengan nama A, maka kita tidak bisa membuat tag dengan nama yang sama lagi</li>
+<li>Untuk membuat tag, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git tag tagName commitId
+</code></pre>
+<p><img src="..\assets\img\7\1.PNG" alt="1"></p>
+<hr>
+<h2 id="tugas">Tugas</h2>
+<ul>
+<li>Buat file version.txt, lalu isi dengan informasi versi aplikasi</li>
+<li>Lakukan :
+<ul>
+<li>Ubah file dengan isi 1.0.0, lalu commit dan buat tag untuk commit tersebut</li>
+<li>Ubah file dengan isi 1.0.1, lalu commit dan buat tag untuk commit tersebut</li>
+<li>Ubah file dengan isi 1.0.2, lalu commit dan buat tag untuk commit tersebut</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="menampilkan-tag">Menampilkan Tag</h2>
+<ul>
+<li>Untuk menampilkan semua tag yang ada di Repository, kita bisa menggunakan perintah :</li>
+</ul>
+<pre><code>git tag -l
+git tag --list
+</code></pre>
+<hr>
+<h2 id="checkout-ke-tag">Checkout ke Tag</h2>
+<ul>
+<li>Seperti yang sudah dijelaskan di kelas Git Dasar, kita kita melihat snapshot sebelumnya di Git</li>
+<li>Sekarang dengan menggunakan Tag, kita juga bisa melihat snapshot sebelumnya tanpa harus menggunakan commitId, cukup menggunakan Tag :</li>
+</ul>
+<pre><code>git checkout tagname
+</code></pre>
+<hr>
+<h2 id="menghapus-tag">Menghapus Tag</h2>
+<ul>
+<li>Tidak ada cara untuk mengubah Tag, jadi jika kita ingin mengubah Tag, kita bisa membuat Tag baru ke commit yang sama, lalu menghapus Tag yang lama</li>
+<li>Untuk menghapus Tag, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git tag -d namatag
+git tag --delete namatag
+</code></pre>
+<hr>
+<h2 id="tugas-1">Tugas</h2>
+<ul>
+<li>Silahkan hapus tag untuk versi rilis 1.0.1</li>
+</ul>
+
+        
+        
+    </body>
+    </html>

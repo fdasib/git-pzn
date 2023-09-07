@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Push</title>
+        <style>
+            /* From extension vscode.github */
+            /*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+            .vscode-dark img[src$=\#gh-light-mode-only],
+            .vscode-light img[src$=\#gh-dark-mode-only] {
+                display: none;
+            }
+        </style>
+
+        <link rel="stylesheet" href="../../assets/css/markdown.min.css">
+        <link rel="stylesheet" href="../../assets/css/highlight.min.css">
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+            .task-list-item {
+                list-style-type: none;
+            }
+
+            .task-list-item-checkbox {
+                margin-left: -20px;
+                vertical-align: middle;
+                pointer-events: none;
+            }
+        </style>
+
+    </head>
+
+    <body class="vscode-body vscode-dark">
+        <h1 id="push">Push</h1>
+        <hr>
+        <h2 id="push-1">Push</h2>
+        <ul>
+            <li>Walaupun kita sudah menyimpan perubahan di Git Project di local, tapi tidak secara otomatis akan di sync
+                dengan Remote Repository</li>
+            <li>Hal ini karena sejak awal Git di desain sebagai distributed version control, artinya kita bisa melakukan
+                perubahan dimanapun dan kapanpun, tanpa harus terkoneksi ke Git Server</li>
+            <li>Oleh karena itu, jika kita ingin mengirim perubahan yang terjadi di Git Project di local kita, kita
+                perlu mengirimnya secara manual ke Git Server</li>
+            <li>Untuk mengirim perubahan di local ke git server, kita bisa gunakan perintah yang bernama push</li>
+        </ul>
+        <hr>
+        <h2 id="push-branch">Push Branch</h2>
+        <ul>
+            <li>Untuk mengirim perubahan branch ke remote repository dengan nama branch sama:</li>
+        </ul>
+        <pre><code>git push namaremote localbranch
+</code></pre>
+        <ul>
+            <li>Untuk mengirim perubahan branch ke remote repository dengan nama branch yang berbeda, kita bisa gunakan
+                perintah :</li>
+        </ul>
+        <pre><code>git push namaremote localbranch:remotebranch
+</code></pre>
+        <p><img src="..\assets\img\6\1.PNG" alt="1"></p>
+        <hr>
+        <h2 id="push-semua-branch">Push Semua Branch</h2>
+        <ul>
+            <li>Jika kita ingin mengirim semua perubahan di semua branch ke remote repository, kita bisa gunakan
+                perintah :</li>
+        </ul>
+        <pre><code>git push origin --all
+</code></pre>
+        <hr>
+        <h2 id="menghapus-branch">Menghapus Branch</h2>
+        <ul>
+            <li>Perintah Push juga bisa digunakan untuk menghapus branch yang ada di remote repository</li>
+            <li>Kita bisa gunakan perintah</li>
+        </ul>
+        <pre><code>git push --delete namaremote namabranch
+</code></pre>
+        <ul>
+            <li>Perlu diingat, menghapus remote branch bukan berarti menghapus branch di local, jadi jika kita ingin
+                hapus di local, kita harus lakukan secara manual</li>
+        </ul>
+
+
+
+    </body>
+
+</html>

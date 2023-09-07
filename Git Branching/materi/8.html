@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Stash</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="stash">Stash</h1>
+<hr>
+<h2 id="stash-1">Stash</h2>
+<ul>
+<li>Kadang ada keadaan, dimana kita sedang melakukan perubahan di sebuah branch, namun perubahan nya belum disimpan di Repository, misal masih di Working atau Staging Index</li>
+<li>Lalu kita butuh secepatnya melakukan perubahan di branch lain</li>
+<li>Jika perubahan tersebut belum siap kita commit, kita bisa menyimpan semua perubahan tersebut ke Stash</li>
+<li>Stash adalah sebuah tempat dimana kita bisa menyimpan perubahan di Working atau Staging Index secara sementara agar branch saat ini menjadi bersih kembali, sehingga kita bisa pindah ke branch lain</li>
+</ul>
+<hr>
+<h2 id="tugas">Tugas</h2>
+<ul>
+<li>Di branch utama</li>
+<li>Buat branch baru dengan nama feature/d</li>
+<li>Di branch utama, buat perubahan di file1.txt, lalu commit</li>
+<li>Pindah ke branch feature/d</li>
+<li>Lakukan perubahan file1.txt, tambahkan ke Staging Index</li>
+<li>Lakukan perubahan file2.txt, biarkan di Working</li>
+<li>Pindah ke branch utama</li>
+</ul>
+<hr>
+<h2 id="error-ketika-pindah-branch">Error Ketika Pindah Branch</h2>
+<ul>
+<li>Secara default, ketika kita melakukan perpindahan branch, Git akan secara pintar membawa perubahan yang terjadi di branch saat ini ke branch tujuan pindah</li>
+<li>Namun jika ternyata terdapat conflict, pada kasus kita, pada file1.txt terdapat conflict, maka secara otomatis kita tidak bisa pindah ke branch tersebut</li>
+</ul>
+<p><img src="..\assets\img\8\1.PNG" alt="1"></p>
+<hr>
+<h2 id="menyimpan-perubahan-ke-stash">Menyimpan Perubahan ke Stash</h2>
+<ul>
+<li>Untuk menyimpan semua perubahan yang terjadi di Working dan Staging Index, kita bisa menggunakan Stash</li>
+<li>Untuk menyimpan perubahan ke Stash, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git stash push -m ‘message stash’
+</code></pre>
+<ul>
+<li>Untuk melihat semua Stash, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git stash list
+</code></pre>
+<ul>
+<li>Untuk melihat perubahan yang terjadi di Stash, kita bisa gunakan perintah</li>
+</ul>
+<pre><code>git stash show stashId
+</code></pre>
+<hr>
+<h2 id="tugas-1">Tugas</h2>
+<ul>
+<li>Simpan semua perubahan ke stash</li>
+<li>Pindah ke branch utama</li>
+</ul>
+<hr>
+<h2 id="mengambil-perubahan-di-stash">Mengambil Perubahan di Stash</h2>
+<ul>
+<li>Untuk mengambil perubah di stash, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git stash apply stashId
+</code></pre>
+<ul>
+<li>Untuk menghapus stash, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git stash drop stashId
+</code></pre>
+<ul>
+<li>Untuk menghapus semua stash, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git stash clear
+</code></pre>
+<hr>
+<h2 id="tugas-2">Tugas</h2>
+<ul>
+<li>Pindah ke branch feature/d</li>
+<li>Ambil perubahan di stash</li>
+<li>Lalu hapus data stash</li>
+<li>Commit perubahan di branch</li>
+</ul>
+
+        
+        
+    </body>
+    </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Snapshot Sebelumnya</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+<link rel="stylesheet" href="../../assets/css/markdown.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="snapshot-sebelumnya">Snapshot Sebelumnya</h1>
+<hr>
+<h2 id="snapshot-sebelumnya-1">Snapshot Sebelumnya</h2>
+<ul>
+<li>Git juga memiliki fitur seperti mesin waktu, dimana kita bisa kembali pada snapshot sebelumnya</li>
+<li>Kita bisa tentukan kemana tujuan snapshot kita hanya dengan menggunakan hash commit</li>
+<li>Cara jika kita ingin menuju ke snapshot tertentu, cukup gunakan perintah :</li>
+</ul>
+<pre><code>git checkout hash
+</code></pre>
+<ul>
+<li>Jika ingin kembali ke paling awal, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git checkout namabranch
+</code></pre>
+<hr>
+<h2 id="git-branch">Git Branch</h2>
+<ul>
+<li>Materi branching akan dibahas pada course terpisah, namun secara default saat kita membuat Git Repository, maka secara otomatis Git akan membuat branch</li>
+<li>Untuk melihat nama branch saat ini, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git branch --show-current
+</code></pre>
+<p><img src="..\assets\img\17\1.PNG" alt="1"></p>
+<hr>
+<h2 id="kode--git-checkout">Kode : Git Checkout</h2>
+<p><img src="..\assets\img\17\2.PNG" alt="2"></p>
+<hr>
+<h2 id="kode--kembali-ke-commit-terakhir">Kode : Kembali Ke Commit Terakhir</h2>
+<p><img src="..\assets\img\17\3.PNG" alt="3"></p>
+
+        
+        
+    </body>
+    </html>

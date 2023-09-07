@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Commit Log</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+<link rel="stylesheet" href="../../assets/css/markdown.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="commit-log">Commit Log</h1>
+<hr>
+<h2 id="commit-log-1">Commit Log</h2>
+<ul>
+<li>Git adalah distributed version control, artinya walaupun kita Repository di local komputer kita, semua riwayat perubahan disimpan di komputer kita</li>
+<li>Kekurangannya menjadi makin lama Repository akan semakin besar ukurannya, namun keuntungannya, kita bisa melihat semua riwayat commit, atau disebut Commit Log</li>
+<li>Untuk melihat Commit Log, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git log
+</code></pre>
+<hr>
+<h2 id="kode--git-log">Kode : Git Log</h2>
+<p><img src="..\assets\img\11\1.PNG" alt="1"></p>
+<hr>
+<h2 id="log-sederhana">Log Sederhana</h2>
+<p>● Kadang kita hanya ingin melihat commit log message nya saja atau istilahnya adalah versi sederhananya saja<br>
+● Untuk melakukan itu, kita bisa gunakan perintah :</p>
+<pre><code>git log --oneline
+</code></pre>
+<hr>
+<h2 id="kode--git-log-oneline">Kode : Git Log Oneline</h2>
+<p><img src="..\assets\img\10\2.PNG" alt="2"></p>
+<hr>
+<h2 id="graph">Graph</h2>
+<ul>
+<li>Saat nanti kita sudah belajar tentang Git Branching, kadang kita ingin melihat commit log dengan hubungannya dengan commit log sebelumnya</li>
+<li>Hal ini bisa kita lakukan menggunakan perintah :</li>
+</ul>
+<pre><code>git log --oneline --graph
+</code></pre>
+<hr>
+<h2 id="kode--git-log-graph">Kode : Git Log Graph</h2>
+<p><img src="..\assets\img\10\3.PNG" alt="3"></p>
+<hr>
+<h2 id="kode--contoh-git-graph-kompleks">Kode : Contoh Git Graph Kompleks</h2>
+<p><img src="..\assets\img\10\4.PNG" alt="4"></p>
+<hr>
+<h2 id="melihat-detail-commit">Melihat Detail Commit</h2>
+<ul>
+<li>Kadang kita ingin melihat detail perubahan yang terjadi pada sebuah commit</li>
+<li>Untuk melakukan itu, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git show hash
+</code></pre>
+<hr>
+<h2 id="kode--git-show">Kode : Git Show</h2>
+<p><img src="..\assets\img\10\5.PNG" alt="5"></p>
+<p>Atau bisa juga melihat perubahan terakhir :</p>
+<p><img src="..\assets\img\10\6.PNG" alt="6"></p>
+
+        
+        
+    </body>
+    </html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Branch</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="branch">Branch</h1>
+<hr>
+<h2 id="melihat-branch-saat-ini">Melihat Branch Saat Ini</h2>
+<ul>
+<li>Secara default, Git pasti akan membuat branch utama, biasanya master atau main</li>
+<li>Untuk melihat nama branch saat ini, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git branch --show-current
+</code></pre>
+<p><img src="..\assets\img\2\1.PNG" alt="1"></p>
+<hr>
+<h2 id="membuat-branch">Membuat Branch</h2>
+<ul>
+<li>Untuk membuat branch baru, caranya sangat mudah, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git branch namabranchbaru
+</code></pre>
+<p><img src="..\assets\img\2\2.PNG" alt="2"></p>
+<ul>
+<li>Saat kita buat branch baru, secara otomatis branch baru akan dimulai dari posisi branch kita saat ini, jika misal kita membuat branch baru ketika posisi kita sedang di branch master, maka branch baru tersebut akan dibuat dari branch master</li>
+</ul>
+<hr>
+<h2 id="diagram-membuat-branch-baru">Diagram Membuat Branch Baru</h2>
+<p><img src="..\assets\img\2\3.PNG" alt="3"></p>
+<hr>
+<h2 id="melihat-semua-branch">Melihat Semua Branch</h2>
+<ul>
+<li>Untuk melihat semua branch yang ada di Repository kita, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git branch --list
+</code></pre>
+<ul>
+<li>Atau lebih singkat :</li>
+</ul>
+<pre><code>git branch
+</code></pre>
+<p><img src="..\assets\img\2\4.PNG" alt="4"></p>
+<hr>
+<h2 id="pindah-ke-branch-lain">Pindah ke Branch Lain</h2>
+<ul>
+<li>Setelah kita membuat branch baru, kita tidak secara otomatis akan pindah branch</li>
+<li>Untuk pindah ke branch lain, kita perlu lakukan secara manual</li>
+<li>Caranya kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git switch namabranch
+git checkout namabranch
+</code></pre>
+<p><img src="..\assets\img\2\5.PNG" alt="5"></p>
+<hr>
+<h2 id="mengubah-nama-branch">Mengubah Nama Branch</h2>
+<ul>
+<li>Jika kita melakukan kesalahan pembuatan nama branch, kita juga bisa lakukan perubahan nama branch</li>
+<li>Namun untuk melakukannya, kita perlu pindah terlebih dahulu ke branch yang ingin kita ubah namanya</li>
+<li>Setelah pindah, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git branch -m namabranchbaru
+</code></pre>
+<p><img src="..\assets\img\2\6.PNG" alt="6"></p>
+<hr>
+<h2 id="menghapus-branch">Menghapus Branch</h2>
+<ul>
+<li>Jika sebuah branch sudah tidak digunakan lagi, idealnya kita perlu menghapus branch tersebut</li>
+<li>Untuk menghapus branch, kita perlu keluar terlebih dahulu dari branch tersebut</li>
+<li>Lalu gunakan perintah :</li>
+</ul>
+<pre><code>git branch -d namabranch
+git branch --delete namabranch
+</code></pre>
+<p><img src="..\assets\img\2\7.PNG" alt="7"></p>
+
+        
+        
+    </body>
+    </html>

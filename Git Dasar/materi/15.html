@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Amend Commit</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+<link rel="stylesheet" href="../../assets/css/markdown.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="amend-commit">Amend Commit</h1>
+<hr>
+<h2 id="amend-commit-1">Amend Commit</h2>
+<ul>
+<li>Kadang saat sudah melakukan commit, mungkin ada beberapa hal yang terlupakan</li>
+<li>Biasanya kita akan lakukan reset soft ke commit sebelumnya, lalu tambahkan perubahan yang terlupakan, lalu kita lakukan commit ulang</li>
+<li>Hal tersebut bisa dilakukan tanpa manual melakukan reset, caranya bisa menggunakan perintah :</li>
+</ul>
+<pre><code>git commit --amend
+</code></pre>
+<ul>
+<li>Perlu diingat, amend akan mengubah hash commit karena data perubahan yang dicommit bertambah</li>
+</ul>
+<hr>
+<h2 id="tugas">Tugas</h2>
+<ul>
+<li>Tambah file3.txt</li>
+<li>Commit file3.txt ke Repository</li>
+<li>Ubah file3.txt</li>
+<li>Commit dengan amend ke Repository :</li>
+</ul>
+<pre><code class="language-js">git commit --amend
+</code></pre>
+<hr>
+<h2 id="kode--git-commit-amend">Kode : Git Commit Amend</h2>
+<p><img src="..\assets\img\15\1.PNG" alt="1"></p>
+
+        
+        
+    </body>
+    </html>

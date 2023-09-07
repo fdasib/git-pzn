@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tag</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="../../assets/css/markdown.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="tag">Tag</h1>
+<hr>
+<h2 id="tag-1">Tag</h2>
+<ul>
+<li>Saat kita melakukan push data ke remote repository, data Tag tidak akan di push juga ke remote repository</li>
+<li>Jika kita ingin mengirim data Tag juga, kita perlu melakukan push tag tersebut</li>
+</ul>
+<hr>
+<h2 id="mengirim-tag">Mengirim Tag</h2>
+<ul>
+<li>Untuk mengirim Tag ke remote repository, kita bisa gunakan perintah<pre><code>git push namaremote namatag
+</code></pre>
+</li>
+<li>Atau jika kita ingin mengirim semua Tag ke remote repository, kita bisa gunakan perintah<pre><code>git push namaremote --tags
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="mengambil-tag">Mengambil Tag</h2>
+<ul>
+<li>Untuk mengambil Tag, kita bisa gunakan perintah<pre><code>git fetch namaremote namatag
+</code></pre>
+</li>
+<li>Atau jika kita ingin mengambil semua Tag, kita bisa gunakan perintah<pre><code>git fetch namaremote
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="menghapus-tag">Menghapus Tag</h2>
+<ul>
+<li>Saat kita menghapus Tag di local repository, data tag tersebut tetap ada di remote repository</li>
+<li>Jika kita ingin menghapus Tag di remote repository, kita bisa gunakan perintah :<pre><code>git push --delete namaremote namatag
+</code></pre>
+</li>
+</ul>
+
+        
+        
+    </body>
+    </html>

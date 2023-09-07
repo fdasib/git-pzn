@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>SSH</title>
+        <style>
+            /* From extension vscode.github */
+            /*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+            .vscode-dark img[src$=\#gh-light-mode-only],
+            .vscode-light img[src$=\#gh-dark-mode-only] {
+                display: none;
+            }
+        </style>
+
+        <link rel="stylesheet" href="../../assets/css/markdown.min.css">
+        <link rel="stylesheet" href="../../assets/css/highlight.min.css">
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+            .task-list-item {
+                list-style-type: none;
+            }
+
+            .task-list-item-checkbox {
+                margin-left: -20px;
+                vertical-align: middle;
+                pointer-events: none;
+            }
+        </style>
+
+    </head>
+
+    <body class="vscode-body vscode-dark">
+        <h1 id="ssh">SSH</h1>
+        <hr>
+        <h2 id="ssh-1">SSH</h2>
+        <ul>
+            <li>SSH adalah singkatan dari Secure Shell</li>
+            <li>SSH merupakan protokol jaringan untuk komunikasi jaringan yang aman dan terenkripsi</li>
+            <li>Pengguna sistem operasi Linux atau Mac biasanya sudah sangat familiar dengan SSH</li>
+            <li>SSH merupakan aplikasi berbasis terminal</li>
+            <li>Di Linux dan Mac, SSH sudah terinstall secara otomatis, sedangkan di Windows, ketika kita menginstall
+                Git, secara otomatis Git akan menginstall SSH juga</li>
+        </ul>
+        <hr>
+        <h2 id="git-ssh">Git SSH</h2>
+        <ul>
+            <li>Git sendiri memiliki beberapa mekanisme untuk berkomunikasi dengan Git Server, seperti http dan SSH</li>
+            <li>Pada kelas ini, kita akan menggunakan SSH untuk berkomunikasi dengan Git Server</li>
+            <li>Hal ini karena SSH merupakan protokol yang direkomendasikan ketika berkomunikasi dengan Git Server</li>
+        </ul>
+        <hr>
+        <h2 id="ssh-key">SSH Key</h2>
+        <ul>
+            <li>Hal pertama yang perlu kita lakukan ketika menggunakan SSH adalah, membuat SSH Key</li>
+            <li>SSH Key merupakan kunci yang digunakan untuk autentikasi ke SSH Server</li>
+            <li>Untuk membuat SSH Key, kita bisa gunakan perintah ssh-keygen di terminal</li>
+            <li>Setelah selesai, maka secara otomatis akan terdapat 2 key di local kita, yaitu private key dan public
+                key</li>
+            <li>Kita bisa melihatnya di dalam folder .ssh di Home directory kita</li>
+            <li>File id_rsa adalah private key, dan id_rsa.pub adalah public key</li>
+        </ul>
+        <p><img src="..\assets\img\4\1.PNG" alt="1"></p>
+        <p><img src="..\assets\img\4\2.PNG" alt="2"></p>
+        <hr>
+        <h2 id="menambahkan-ssh-public-key-ke-github">Menambahkan SSH Public Key ke Github</h2>
+        <ul>
+            <li>Setelah kita membuat SSH Key, selanjutnya kita perlu meregistrasikan SSH public key ke Github</li>
+            <li>Hal ini dilakukan, agar ketika kita nanti terkoneksi ke Git Server di Github, kita tidak perlu melakukan
+                autentikasi lagi</li>
+            <li><a href="https://github.com/settings/keys">https://github.com/settings/keys</a></li>
+        </ul>
+        <p><img src="..\assets\img\4\3.PNG" alt="3"></p>
+        <p><img src="..\assets\img\4\4.PNG" alt="4"></p>
+        <p><img src="..\assets\img\4\5.PNG" alt="5"></p>
+        <hr>
+        <h2 id="test-ssh-ke-github">Test SSH ke Github</h2>
+        <ul>
+            <li>Selanjutnya untuk memastikan apakah kita sudah bisa terkoneksi ke Github menggunakan SSH, kita bisa
+                gunakan perintah :</li>
+        </ul>
+        <pre><code>ssh -T git@github.com
+</code></pre>
+        <p><img src="..\assets\img\4\6.PNG" alt="6"></p>
+
+
+
+    </body>
+
+</html>

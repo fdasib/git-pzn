@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Remote Repository</title>
+        <style>
+            /* From extension vscode.github */
+            /*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+            .vscode-dark img[src$=\#gh-light-mode-only],
+            .vscode-light img[src$=\#gh-dark-mode-only] {
+                display: none;
+            }
+        </style>
+
+        <link rel="stylesheet" href="../../assets/css/markdown.min.css">
+        <link rel="stylesheet" href="../../assets/css/highlight.min.css">
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+            .task-list-item {
+                list-style-type: none;
+            }
+
+            .task-list-item-checkbox {
+                margin-left: -20px;
+                vertical-align: middle;
+                pointer-events: none;
+            }
+        </style>
+
+    </head>
+
+    <body class="vscode-body vscode-dark">
+        <h1 id="remote-repository">Remote Repository</h1>
+        <hr>
+        <h2 id="remote-repository-1">Remote Repository</h2>
+        <ul>
+            <li>Ketika kita membuat Git Project, secara default, Git tidak tahu tentang Remote Repository</li>
+            <li>Kita perlu memberi tahu ke git project yang sudah kita buat tentang lokasi git repository</li>
+        </ul>
+        <hr>
+        <h2 id="menambah-remote-repository">Menambah Remote Repository</h2>
+        <ul>
+            <li>Untuk menambah remote repository, kita bisa gunakan perintah :</li>
+        </ul>
+        <pre><code>git remote add nama ssh-url
+</code></pre>
+        <p><img src="..\assets\img\5\1.PNG" alt="1"></p>
+        <p><img src="..\assets\img\5\2.PNG" alt="2"></p>
+        <ul>
+            <li>Salah satu kebiasaan di Git, biasanya memberi nama untuk remote repository dengan nama origin</li>
+        </ul>
+        <hr>
+        <h2 id="melihat-remote-repository">Melihat Remote Repository</h2>
+        <ul>
+            <li>Untuk melihat remote repository yang ada di git project, kita bisa gunakan perintah :</li>
+        </ul>
+        <pre><code>git remote
+</code></pre>
+        <p><img src="..\assets\img\5\3.PNG" alt="3"></p>
+        <ul>
+            <li>Untuk melihat URL detail remote repository, kita bisa gunakan perintah</li>
+        </ul>
+        <pre><code>git remote get-url nama
+</code></pre>
+        <p><img src="..\assets\img\5\4.PNG" alt="4"></p>
+        <hr>
+        <h2 id="menghapus-remote-repository">Menghapus Remote Repository</h2>
+        <ul>
+            <li>Untuk menghapus remote repository, kita bisa gunakan perintah :</li>
+        </ul>
+        <pre><code>git remote rm nama
+</code></pre>
+        <p><img src="..\assets\img\5\5.PNG" alt="5"></p>
+
+
+
+    </body>
+
+</html>

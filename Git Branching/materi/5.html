@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Merge Conflict</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="merge-conflict">Merge Conflict</h1>
+<hr>
+<h2 id="merge-conflict-1">Merge Conflict</h2>
+<ul>
+<li>Dalam pembuatan aplikasi, biasanya setiap programmer akan melakukan penambahkan kode program di Repository secara parallel</li>
+<li>Biasanya tiap programmer akan membuat branch masing-masing</li>
+<li>Dan tidak bisa dihindari, kadang programmer akan melakukan perubahan pada kode file yang sama di branch berbeda</li>
+<li>Dan biasanya ketika melakukan merge, akan terjadi yang namanya conflict</li>
+<li>Hal ini disebabkan, satu file diubah di branch yang berbeda, sehingga ketika di merge, kita perlu melakukan yang namanya Merge Conflict</li>
+</ul>
+<hr>
+<h2 id="tugas">Tugas</h2>
+<ul>
+<li>Buat dua branch dari branch utama</li>
+<li>Branch feature/a mengubah file 1 dan file 2</li>
+<li>Branch feature/b mengubah file 1 dan file 3</li>
+<li>Merge branch feature/a ke branch utama</li>
+<li>Merge branch feature/b ke branch utama, hal ini akan memicu conflict</li>
+</ul>
+<hr>
+<h2 id="membatalkan-conflict">Membatalkan Conflict</h2>
+<ul>
+<li>Jika terjadi conflict, maka kita wajib memperbaikinya terlebih dahulu</li>
+<li>Semua perubahan yang tidak konflik akan secara otomatis berada di Staging Index</li>
+<li>Sedangkan perubahan yang konflik akan secara otomatis berada di Working Directory</li>
+<li>Jika kita ingin membatalkan merge, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git merge --abort
+</code></pre>
+<ul>
+<li>Secara otomatis semua perubahan di branch yang ingin kita merge akan dihapus</li>
+</ul>
+<hr>
+<h2 id="memperbaiki-conflict">Memperbaiki Conflict</h2>
+<ul>
+<li>Saat terjadi conflict, tidak ada cara otomatis memperbaikinya</li>
+<li>Kita perlu memperbaiki conflict secara manual</li>
+<li>Dan jika perbaikan conflict sudah dilakukan, maka kita perlu melakukan commit perubahan tersebut</li>
+</ul>
+<hr>
+<h2 id="file-conflict">File Conflict</h2>
+<p><img src="..\assets\img\5\1.PNG" alt="1"></p>
+<hr>
+<h2 id="diagram-merge-conflict">Diagram Merge Conflict</h2>
+<p><img src="..\assets\img\5\2.PNG" alt="2"></p>
+
+        
+        
+    </body>
+    </html>

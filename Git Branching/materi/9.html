@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rebase</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="rebase">Rebase</h1>
+<hr>
+<h2 id="rebase-1">Rebase</h2>
+<ul>
+<li>Sebelumnya untuk menggabungkan dua buah branch, kita sudah belajar yang namanya merge</li>
+<li>Sekarang kita akan bahas tentang cara lain menggabungkan dua buah branch, yaitu rebase</li>
+<li>Rebase agak sedikit kompleks, jadi kita akan coba bahas secara visual</li>
+</ul>
+<hr>
+<h2 id="diagram-branch">Diagram Branch</h2>
+<p><img src="..\assets\img\9\1.PNG" alt="1"></p>
+<hr>
+<h2 id="diagram-merge-branch">Diagram Merge Branch</h2>
+<p><img src="..\assets\img\9\2.PNG" alt="2"></p>
+<hr>
+<h2 id="diagram-rebase-branch">Diagram Rebase Branch</h2>
+<p><img src="..\assets\img\9\3.PNG" alt="3"></p>
+<hr>
+<h2 id="tugas">Tugas</h2>
+<ul>
+<li>Di branch utama, buat branch feature/rebase</li>
+<li>Di branch utama, ubah file1.txt lalu commit</li>
+<li>Pindah ke branch feature/rebase</li>
+<li>Di branch feature/rebase, ubah file2.txt lalu commit</li>
+<li>Di branch feature/rebase, ubah file3.txt lalu commit</li>
+</ul>
+<hr>
+<h2 id="melakukan-rebase">Melakukan Rebase</h2>
+<ul>
+<li>Untuk melakukan rebase, kita bisa lakukan perintah :</li>
+</ul>
+<pre><code>git rebase namabranch
+</code></pre>
+<ul>
+<li>Jika sekarang kita ada di branch feature/rebase, lalu menggunakan perintah :</li>
+</ul>
+<pre><code>git rebase master
+</code></pre>
+<ul>
+<li>Artinya kita melakukan rebase semua commit di master ke branch develop</li>
+</ul>
+<hr>
+<h2 id="tugas-1">Tugas</h2>
+<ul>
+<li>Pindah ke branch feature/rebase</li>
+<li>Lakukan rebase dengan branch master</li>
+</ul>
+<hr>
+<h2 id="merge-branch">Merge Branch</h2>
+<ul>
+<li>Setelah melakukan rebase, bukan berarti branch yang di rebase sekarang posisinya ada di branch yang melakukan rebase, posisinya tetap ada di commit terakhir di branch tersebut</li>
+<li>Seperti yang terlihat pada gambar Diagram Rebase Branch</li>
+<li>Agar posisinya sama dengan branch yang melakukan rebase, kita bisa menggunakan perintah merge</li>
+</ul>
+<hr>
+<h2 id="diagram-setelah-merge">Diagram Setelah Merge</h2>
+<p><img src="..\assets\img\9\4.PNG" alt="4"></p>
+<hr>
+<h2 id="merge-vs-rebase">Merge vs Rebase</h2>
+<ul>
+<li>Rebase akan terlihat sangat rapih, karena timeline nya seakan terlihat hanya ada satu timeline pada Repository</li>
+<li>Namun, rebase sebenarnya secara otomatis menulis ulang semua commit yang kita lakukan, dalam artian commit id pasti berubah, artinya semua referensi ke commit id sebelum-sebelumnya akan rusak dan hilang</li>
+<li>Tidak ada mana yang lebih baik, semua tergantung kebutuhan</li>
+</ul>
+
+        
+        
+    </body>
+    </html>

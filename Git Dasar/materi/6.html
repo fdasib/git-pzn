@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hash</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+<link rel="stylesheet" href="../../assets/css/markdown.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="hash">Hash</h1>
+<hr>
+<h2 id="snapshot">Snapshot</h2>
+<ul>
+<li>Pada materi sebelumnya kita selalu menyebutkan versi pada perubahan file</li>
+<li>Sebenarnya perubahan yang dilakukan bisa jadi dilakukan secara bersamaan untuk beberapa file, hal ini berarti sebenarnya tidak ada yang namanya versi file</li>
+<li>Semua perubahan yang terjadi akan direkam, dan kita sebut namanya adalah snapshot</li>
+<li>Snapshot berisikan semua perubahan yang terjadi di semua file yang kita commit</li>
+<li>Setiap snapshot akan menghasilkan hash</li>
+</ul>
+<hr>
+<h2 id="hash-1">Hash</h2>
+<ul>
+<li>Setiap snapshot yang kita lakukan, semua akan menghasilkan hash sebagai identitas snapshot nya</li>
+<li>Hash merupakan checksum untuk menghitung perubahan yang terjadi</li>
+<li>Git menggunakan algoritma SHA-1 untuk menghitung hash</li>
+<li>Hash dibutuhkan untuk menjaga data integrity, sehingga tiap snapshot yang sudah kita lakukan tidak bisa diubah, hal ini karena akan secara otomatis merusak hash yang sudah dibuat</li>
+<li>Contoh hash Git : 30534aeabde65981732c6c469b7583483d379b00</li>
+</ul>
+<hr>
+<h2 id="diagram-snapshot">Diagram Snapshot</h2>
+<p><img src="..\assets\img\6\1.PNG" alt="1"></p>
+<hr>
+<h2 id="perhitungan-hash">Perhitungan Hash</h2>
+<ul>
+<li>Perhitungan hash dilakukan tidak hanya dari perubahan file</li>
+<li>Namun juga dari parent, author dan message</li>
+<li>Artinya perubahan yang terjadi pada snapshot sebelumnya, maka akan menimbulkan efek berantai, karena semua hash selanjutnya akan berubah</li>
+<li>Oleh karena itu, hal tersebut tidak bisa dilakukan di Git</li>
+</ul>
+<hr>
+<h2 id="head">HEAD</h2>
+<ul>
+<li>HEAD merupakan pointer menuju hash yang paling akhir</li>
+<li>Karena kadang sangat menyulitkan jika harus menuliskan hash value, jika kita akan menuju ke hash paling baru, kita bisa gunakan kata HEAD</li>
+</ul>
+<hr>
+<h2 id="diagram-head">Diagram HEAD</h2>
+<p><img src="..\assets\img\6\2.PNG" alt="2"></p>
+
+        
+        
+    </body>
+    </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Menambah File</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+<link rel="stylesheet" href="../../assets/css/markdown.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="menambah-file">Menambah File</h1>
+<hr>
+<h2 id="menambah-file-1">Menambah File</h2>
+<ul>
+<li>Untuk menambah file baru ke Repository, kita cukup tambahkan file nya saja</li>
+<li>Secara otomatis file yang kita tambahkan awalnya akan berada di working directory</li>
+<li>Secara default saat menambah file baru, file tersebut tidak akan di track perubahannya</li>
+<li>Agar perubahan di track, kita harus pindahkan dari working directory ke staging index</li>
+</ul>
+<hr>
+<h2 id="kode--untracked-files">Kode : Untracked Files</h2>
+<blockquote>
+<p>membuat file baru</p>
+</blockquote>
+<pre><code>touch file1.txt
+</code></pre>
+<blockquote>
+<p>mengecek status</p>
+</blockquote>
+<pre><code>git status
+</code></pre>
+<p><img src="..\assets\img\7\1.PNG" alt="1"></p>
+<hr>
+<h2 id="kode--memindahkan-ke-staging-index">Kode : Memindahkan ke Staging Index</h2>
+<blockquote>
+<p>memidahkan file baru</p>
+</blockquote>
+<pre><code>git add file1.txt
+git status
+</code></pre>
+<p><img src="..\assets\img\7\2.PNG" alt="2"></p>
+<hr>
+<h2 id="kode--commit-ke-repository">Kode : Commit ke Repository</h2>
+<pre><code>git commit -m &quot;Menambahkan file1.txt&quot;
+git status
+</code></pre>
+<p><img src="..\assets\img\7\3.PNG" alt="3"></p>
+<hr>
+<h2 id="tugas">Tugas</h2>
+<ul>
+<li>Tambah file2.txt, lalu commit ke Repository</li>
+<li>Tambah file3.txt, lalu commit ke Repository</li>
+</ul>
+<pre><code>touch file2.txt file3.txt
+add file2.txt file3.txt
+git commit -m &quot;Menambahkan file2.txt dan file3.txt&quot;
+git status
+</code></pre>
+<p><img src="..\assets\img\7\4.PNG" alt="4"></p>
+
+        
+        
+    </body>
+    </html>

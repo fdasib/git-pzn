@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Fetch</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="../../assets/css/markdown.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="fetch">Fetch</h1>
+<hr>
+<h2 id="fetch-1">Fetch</h2>
+<ul>
+<li>Fetch adalah perintah di Git yang digunakan untuk mendapatkan perubahan terakhir dari remote repository</li>
+<li>Hal ini berguna ketika misal kita ingin mengetahui perubahan apa aja yang sudah terjadi pada remote repository, mungkin rekan kerja kita sudah menambah perubahan ke remote repository</li>
+<li>Fetch itu tidak akan mengubah isi local Git Project kita</li>
+</ul>
+<hr>
+<h2 id="melakukan-fetch">Melakukan Fetch</h2>
+<ul>
+<li>Untuk melakukan fetch untuk semua branch di remote repository, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git fetch namaremote
+</code></pre>
+<ul>
+<li>Atau jika kita ingin melakukan fetch untuk branch tertentu saja di remote, kita bisa gunakan :</li>
+</ul>
+<pre><code>git fetch namaremote remotebranch
+</code></pre>
+<hr>
+<h2 id="tugas">Tugas</h2>
+<ul>
+<li>Lakukan commit dan push di user pertama</li>
+<li>Lakukan fetch di user kedua</li>
+<li>Di user kedua Lakukan git diff dari branch local dan branch remote</li>
+</ul>
+
+        
+        
+    </body>
+    </html>

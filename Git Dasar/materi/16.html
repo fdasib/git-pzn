@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Versi Sebelumnya</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+<link rel="stylesheet" href="../../assets/css/markdown.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="versi-sebelumnya">Versi Sebelumnya</h1>
+<hr>
+<h2 id="versi-sebelumnya-1">Versi Sebelumnya</h2>
+<ul>
+<li>Kadang kita sering mengalami masalah dengan file yang sudah kita commit ke Repository</li>
+<li>Git memiliki fitur dimana kita bisa melihat versi file pada commit sebelumnya</li>
+<li>Saat kita ambil versi file sebelumnya, file pada commit tersebut akan berada di Staging Index</li>
+<li>Untuk melakukannya, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git checkout hash -- namafile
+</code></pre>
+<hr>
+<h2 id="kode--git-status">Kode : Git Status</h2>
+<p>Misal kita ingin melihat file1.txt sebelum terjadi perubahan di commit 1b5f564, maka kita bisa gunakan perintah :</p>
+<pre><code>git checkout 2118ac3 -- file1.txt
+</code></pre>
+<hr>
+<h2 id="kode--git-checkout">Kode : Git Checkout</h2>
+<p><img src="..\assets\img\16\1.PNG" alt="1"></p>
+
+        
+        
+    </body>
+    </html>

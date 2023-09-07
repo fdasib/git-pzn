@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Compare Commit</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+<link rel="stylesheet" href="../../assets/css/markdown.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="compare-commit">Compare Commit</h1>
+<hr>
+<h2 id="compare-commit-1">Compare Commit</h2>
+<ul>
+<li>Git memiliki fitur untuk membandingkan antara commit dengan commit lainnya</li>
+<li>Namun jangan sampai salah pengertian, membandingkan disini adalah membandingkan snapshot hasil commit, bukan perubahan yang terjadi antara commit</li>
+<li>Misal pada commit sebelumnya kita pernah menambah file3.txt, namun jika kita bandingkan antara commit pertama dan terakhir (HEAD), hasilnya hanyalah perbandingan antara file1 dan file2, tidak ada file3</li>
+<li>Hal ini dikarenakan membandingkan commit bukanlah membandingkan perubahan yang pernah terjadi, melainkan membandingkan hasil di commit</li>
+<li>Untuk membandingkan commit, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git diff hash1 hash2
+</code></pre>
+<hr>
+<h2 id="kode--git-diff">Kode : Git Diff</h2>
+<p><img src="..\assets\img\12\1.PNG" alt="1"></p>
+<hr>
+<h2 id="difftool">Difftool</h2>
+<ul>
+<li>Sebelumnya kita sudah melakukan pengaturan menggunakan Visual Studio Code untuk melihat diff</li>
+<li>Jika kita ingin menggunakan visual studio code untuk melihat perbedaan antar commit, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git difftool hash1 hash2
+</code></pre>
+<hr>
+<h2 id="difftool-visual-studio-code">Difftool Visual Studio Code</h2>
+<p><img src="..\assets\img\12\2.PNG" alt="2"></p>
+<p><img src="..\assets\img\12\3.PNG" alt="3"></p>
+
+        
+        
+    </body>
+    </html>

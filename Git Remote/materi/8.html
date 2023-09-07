@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Remote Branch</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="../../assets/css/markdown.min.css">
+<link rel="stylesheet" href="../../assets/css/highlight.min.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="remote-branch">Remote Branch</h1>
+<hr>
+<h2 id="melihat-remote-branch">Melihat Remote Branch</h2>
+<ul>
+<li>Secara default, saat kita melakukan clone, tidak semua remote branch akan di buat di local git project</li>
+<li>Jika kita ingin melihat semua daftar branch yang ada di remote repository, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git branch -r
+</code></pre>
+<ul>
+<li>Atau jika kita ingin melihat semua branch di local dan remote, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git branch -a
+</code></pre>
+<hr>
+<h2 id="membuat-branch-dari-remote-branch">Membuat Branch dari Remote Branch</h2>
+<ul>
+<li>Karena secara default hanya branch utama yang buat di local git project ketika kita clone, kadang kita ingin membuat local branch yang berisikan data dari remote branch</li>
+<li>Untuk melakukan hal itu, kita bisa gunakan perintah :</li>
+</ul>
+<pre><code>git checkout -b localbranch namaremote/remotebranch
+</code></pre>
+
+        
+        
+    </body>
+    </html>
